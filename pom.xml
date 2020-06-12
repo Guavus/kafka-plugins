@@ -8,7 +8,7 @@
   <groupId>co.cask.hydrator</groupId>
   <artifactId>kafka-plugins</artifactId>
   <packaging>pom</packaging>
-  <version>1.9.0_5.1.217</version>
+  <version>1.9.0_5.1.2171</version>
 
   <licenses>
     <license>
@@ -49,7 +49,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <cdap.version>5.1.217</cdap.version>
+    <cdap.version>5.1.2171</cdap.version>
     <hydrator.version>2.1.0</hydrator.version>
     <spark1.version>1.6.1</spark1.version>
     <spark2.version>2.2.0</spark2.version>
@@ -57,7 +57,7 @@
     <docs.dir>docs</docs.dir>
     <kafka8.version>0.8.2.2</kafka8.version>
     <kafka10.version>0.10.2.0</kafka10.version>
-    <hadoop.version>2.3.0</hadoop.version>
+    <hadoop.version>3.1.1.3.1.4.0-315</hadoop.version>
     <netty.version>4.1.16.Final</netty.version>
     <netty-http.version>1.0.0</netty-http.version>
     <main.basedir>${project.basedir}</main.basedir>
