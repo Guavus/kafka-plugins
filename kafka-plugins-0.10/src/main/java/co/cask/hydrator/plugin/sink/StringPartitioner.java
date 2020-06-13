@@ -16,6 +16,7 @@
 
 package co.cask.hydrator.plugin.sink;
 
+import com.google.common.base.Charsets;
 import com.google.common.hash.Hashing;
 import org.apache.kafka.clients.producer.Partitioner;
 import org.apache.kafka.common.Cluster;
@@ -34,7 +35,7 @@ public final class StringPartitioner implements Partitioner {
   public int partition(String topic, Object key, byte[] keyBytes, Object value, byte[] valueBytes, Cluster cluster) {
     List<PartitionInfo> partitions = cluster.partitionsForTopic(topic);
     int numPartitions = partitions.size();
-    return Math.abs(Hashing.md5().hashString(key.toString()).asInt()) % numPartitions;
+    return Math.abs(Hashing.md5().hashString(key.toString(), Charsets.UTF_8).asInt()) % numPartitions;
   }
 
   @Override
